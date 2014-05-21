@@ -1,0 +1,369 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>jQuery Mobile Docs - Transitions</title> 
+	<link rel="stylesheet"  href="demos/css/themes/default/jquery.mobile-1.1.0.css" />  
+	<link rel="stylesheet" href="demos/docs/_assets/css/jqm-docs.css"/>
+
+	<script src="demos/js/jquery.js"></script>
+	<script src="demos/docs/_assets/js/jqm-docs.js"></script>
+	<script src="demos/js/jquery.mobile-1.1.0.js"> </script>
+    <style>
+.display-error {
+	width: 98%;
+	border: 1px solid #D8D8D8;
+	padding: 5px;
+	border-radius: 5px;
+	margin-bottom: 2%;
+	font-family: Arial;
+	font-size: 18px;
+	background-color: rgb(255, 249, 242);
+	color: rgb(211, 0, 0);
+	text-align: center;
+	font-family:Helvetica;
+}
+h2.head
+{
+
+	background-repeat: no-repeat;
+	padding: 0px;
+	margin: 0px;
+	font-size: medium;
+	display: block;
+	float: left;
+	line-height: 33px;
+	padding-left: 58px;
+	color: #464646;
+	text-shadow: 1px 1px 2px #B4B4B4;
+}
+.flag_india {
+	background: url(images/contact_us/india.png);
+}
+.flag_german {
+	background-image: url(images/contact_us/germany-flag.gif);
+}
+
+.flag_usa {
+	background-image: url(images/contact_us/usa.jpg);
+}
+.flag_dubai {
+background-image: url(images/contact_us/uae.gif);
+}
+
+</style>
+</head> 
+<body> 
+
+	<div data-role="page" data-theme="a">
+		<div data-role="header" data-theme="a">
+		<h1>Cre<font size="+1" color="#FF0000">a</font>ce</h1>
+		<a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+		<a href="nav.html" data-icon="search" data-iconpos="notext" data-rel="dialog" data-transition="fade">Search</a>
+	</div><!-- /header -->
+
+	<div data-role="content">
+	  <div class="content-primary">		
+		<h2><font color="#FF0000">Get In Touch</font> </h2> 
+		<form  method="post"  enctype="multipart/form-data" name="country_form" id="country_form">
+                <div id="diverror" class="display-error" style="display: none;">
+                 </div>
+                <label>Name<font color='red'>*</font></label>
+                <input type="text" id="author"  name="author">
+                 <label>Phone Number<font color='red'>*</font></label>
+                <input type="text" name="phone" id="phone">
+                 
+                  
+            
+                 <label>Email<font color='red'>*</font></label>
+                <input type="text" name="email" id="email">
+                 <label>Subject<font color='red'>*</font></label>
+                <input type="text" name="subject" id="subject">
+                 <label>Message<font color='red'>*</font></label>
+               <textarea name="text" id="text"></textarea>
+             
+                <input type="button" name="Ok" id="Ok" value="Send" onClick="javascript:call_submit();">
+                </form>
+
+			
+			 
+		
+
+
+
+<div data-role="collapsible" data-theme="a" data-content-theme="a">
+    <h3><font color="#FF0000">Our Address</font></h3>
+     <p>
+        <div class="wpmd">
+            <div>
+            	<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=nila+technopark+trivandrum&amp;aq=&amp;sll=10.54063,76.128318&amp;sspn=5.862314,10.821533&amp;ie=UTF8&amp;hq=&amp;hnear=Nila,+Technopark+Campus,+Karyavattom,+Thiruvananthapuram,+Kerala&amp;ll=8.560247,76.879843&amp;spn=0.005761,0.010568&amp;t=m&amp;z=11&amp;output=embed"></iframe><br />
+  <br>
+Office1:  +91 471 4063623<br>
+Office2:  +91 471 4061051<br>
+Mob: +08714336743<br>
+Skype:creacetech<br>
+E-mail:creacetec@gmail.com<br>
+       cmo@creace.in 
+            </div><div id="dvloader"></div>
+            <div><font color="#808080" face="@Kozuka Gothic Pro M" class="ws11"><br></font></div>
+        </div>
+    </p>
+</div>
+
+<div data-role="collapsible" data-theme="a" data-content-theme="a">
+    <h3><font color="#FF0000">Our Branches</font></h3>
+     <p>
+        <div class="wpmd">
+            <div>
+            	<div class="card" style="border-bottom:2px solid">
+    <div class="flag">
+      <h2 class="head flag_india">
+          Creace Technologies.
+      </h2>
+    </div>
+    <div class="address">
+      
+      <br><p>
+        4th Floor, Nila Building,<br/>
+          Technopark Campus, Kazhakkuttom PO
+          ,Trivandrum
+         
+		
+		 
+      </p>
+    </div>
+    <div class="address_footer">
+      <a class="a_phone" href=" tel:+91 9287908773"> Mb:+91 8714336743</a><br />
+	   <a class="a_phone" href=" tel:+91 4714063623"> Ph:+91 4714063623</a>
+    
+    </div>    
+  </div>
+  
+   <br>
+  <div class="card" style="border-bottom:2px solid">
+    <div class="flag">
+      <h2 class="head flag_german">
+          Creace Technologies.
+      </h2>
+    </div>
+    <div class="address">
+      
+       <br><p>
+       Business Connect GmbH
+        <br/>Further Str,27
+		<br />90429 Nurnberg,
+		<br />
+     
+		<br />
+      </p>
+    </div>
+    <div class="address_footer">
+      <a class="a_phone" href="tel:0911-28707070">Ph:0911-28707070</a>
+	  <p></p>
+   
+    </div>    
+  </div>
+ <br>
+
+<div class="card" style="border-bottom:2px solid">
+    <div class="flag">
+      <h2 class="head flag_usa">
+          Creace Technologies.
+      </h2>
+    </div>
+    <div class="address">
+      
+       <br><p>
+        1401 Cabrillo Avenue
+        <br/>San Jose, 
+		<br />CA 95132
+        <br/>United States
+			<br />
+				<br />
+      </p>
+    </div>
+    <div class="address_footer">
+      <!--<a class="a_phone" href="tel:(+1)987654321">(+1) 235 422</a>-->
+     	<br />
+    </div>    
+  </div>
+  
+   <br>
+  <div class="card">
+    <div class="flag">
+      <h2 class="head flag_dubai">
+          Creace Technologies.
+      </h2>
+    </div>
+    <div class="address">
+      
+      <br> <p>
+        P.O.Box:27965
+        <br/>Dubai,
+	
+		<br />UAE
+        <br/>
+			
+      </p>
+    </div>
+    <div class="address_footer">
+     <!-- <a class="a_phone" href="tel:+971 43338099">Ph:+971 43338099</a>-->
+  
+    </div>    
+  </div>
+
+            </div><div id="dvloader"></div>
+            <div><font color="#808080" face="@Kozuka Gothic Pro M" class="ws11"><br></font></div>
+        </div>
+    </p>
+</div>
+			
+	  </div>
+		<!--/content-primary -->		
+
+				<div class="content-secondary">
+
+					<div data-role="collapsible" data-collapsed="true" data-theme="a" data-content-theme="d">
+
+							<h3>Menu items </h3>
+
+							<ul data-role="listview" data-theme="c" data-dividertheme="a">
+                                <li><a href="index.html" data-ajax="false">Home</a></li>
+                                <li><a href="creace.html"  data-ajax="false">Creace</a></li>
+                                <li><a href="product.html"  data-ajax="false">Products</a></li>
+                                <li><a href="services.html" data-ajax="false">Services</a></li>
+                                <li><a href="clients.html" data-ajax="false">Portfolio</a></li>
+                                <li><a href="contacts.html" data-ajax="false">Carrers</a></li>
+                                 <li data-role="list-divider">Contact Us</li>
+							</ul>
+					</div>
+   
+				</div>		
+
+			</div><!-- /content -->
+
+			<div data-role="footer" class="footer-docs" data-theme="a">
+			<p>&copy; Creace technologies Pvt Ltd</p>
+	</div>
+
+</div><!-- /page -->
+<script type="text/javascript">
+	function call_submit()
+	{
+		var error=0;
+		var hh =$('#author').val(); 
+		var qln = $('#phone').val();
+		var cno = $('#email').val();
+		var place = $('#subject').val();
+		var msg = $('#text').val();
+		
+		if(hh=="" || hh==" ")
+		{
+		
+			$("#diverror").html("Please Enter Your Name");
+			$("#diverror").className = "display-error";
+			$("#diverror").fadeIn("slow");
+			setTimeout(function() { $("#diverror").fadeOut("slow");}, 3000);
+			$( "#author" ).focus();
+			error=1;
+		}
+		else if(qln=="" || qln==" ")
+		{
+			$("#diverror").html("Please Enter Your Phone Number");
+			$("#diverror").className = "display-error";
+			$("#diverror").fadeIn("slow");
+			setTimeout(function() { $("#diverror").fadeOut("slow");}, 3000);
+			$( "#phone" ).focus();
+			error=1;
+		}
+		
+		else if(cno=="" || cno==" ")
+		{
+			$("#diverror").html("Please Enter Your Email");
+			$("#diverror").className = "display-error";
+			$("#diverror").fadeIn("slow");
+			setTimeout(function() { $("#diverror").fadeOut("slow");}, 3000);
+			$( "#email" ).focus();
+			error=1;
+		}
+		else if(place=="" || place==" ")
+		{
+			$("#diverror").html("Please Enter Your Subject");
+			$("#diverror").className = "display-error";
+			$("#diverror").fadeIn("slow");
+			setTimeout(function() { $("#diverror").fadeOut("slow");}, 3000);
+			$( "#subject" ).focus();
+			error=1;
+		}
+		else if(msg=="" || msg==" ")
+		{
+			$("#diverror").html("Please Enter Your Message");
+			$("#diverror").className = "display-error";
+			$("#diverror").fadeIn("slow");
+			setTimeout(function() { $("#diverror").fadeOut("slow");}, 3000);
+			$( "#text" ).focus();
+			error=1;
+		}
+		
+		if(error==0)
+		{
+				$.ajax({
+				type: 'POST',
+				url:'contact_action.php',
+				enctype: 'multipart/form-data',
+				data: $('#country_form').serialize(),   // I WANT TO ADD EXTRA DATA + SERIALIZE DATA
+				success: function(data){
+				
+				$("#diverror").fadeIn("slow");
+			setTimeout(function() { $("#diverror").fadeOut("slow");}, 3000);
+		$("#diverror").html(data);
+				}
+			});	
+		}
+			
+	}
+	function chngstlogo(input)
+{
+	if($('#stlogo').val()!="")
+	{
+		var old_hidvalue=$('#hidstlogo').val();
+		var ext = $('#stlogo').val().split('.').pop().toLowerCase();
+	//	if($.inArray(ext, ['png','jpg','jpeg']) == -1) 
+//		{
+//			alert('invalid extension!\n Please Upload JPEG or PNG Images');
+//			if(old_hidvalue!="")
+//			{
+//				$('#stlogo').val('');
+//				$('#stlogoimg').attr('src', old_hidvalue);
+//				$('#hidstlogo').val(old_hidvalue);
+//			}
+//			else
+//			{
+//				$('#stlogo').val('');
+//				$('#stlogoimg').attr('src', "img/appbackT.jpg");
+//				$('#hidstlogo').val('');
+//			}
+//			return false;
+//	}
+//	else
+//	{
+	$('#stlogoimg').attr('src', "images/graphics/bigLoader.gif");
+		if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                 $('#stlogoimg').attr('src', e.target.result);
+				 $('#hidstlogo').val(e.target.result);		
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            //}
+			
+			
+			}}
+}
+</script>
+	
+			</body>
+			</html>

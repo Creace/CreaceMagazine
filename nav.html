@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery UI Mobile Framework - Documentation</title>
+	<link rel="stylesheet"  href="demos/css/themes/default/jquery.mobile-1.1.0.css" />  
+	<link rel="stylesheet" href="demos/docs/_assets/css/jqm-docs.css"/>
+
+	<script src="demos/js/jquery.js"></script>
+	
+	<script src="demos/js/jquery.mobile-1.1.0.js"></script>
+	
+</head> 
+<body> 
+	<div data-role="page" data-theme="a" class="nav-search">
+		
+	<div data-role="content">   
+
+	<style>
+
+		.nav-search .ui-content {
+			margin-top:16px;
+		}
+		.nav-search .ui-corner-top {
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			border-radius: 0;
+		}
+		.nav-search .ui-bar-a {
+			background-image:none;
+			background-color:#555;
+		}
+		.nav-search .ui-btn-up-a {
+			background-image:none;
+			background-color:#333333;
+		}
+		.nav-search .ui-btn-inner {
+			border-top: 1px solid #888;
+			border-color: rgba(255, 255, 255, .1);
+		}
+	</style>
+	
+	<script>
+		$('body').delegate('.nav-search', 'pageshow', function( e ) {
+			$('.ui-input-text').attr("autofocus", true)
+		});			
+	</script>
+	
+	<ul data-role="listview" data-theme="a" data-divider-theme="a" data-filter="true" data-filter-theme="a" data-filter-placeholder="Search documentation...">
+			<li data-filtertext="wai-aria voiceover accessibility screen reader">
+				<a href="autoforce.html">Autoforce</a>
+			</li>
+			<li data-filtertext="accordions collapsible set collapsible-set collapsed">
+				<a href="isuite.html">iSuite</a>
+			</li>
+			
+			<li data-filtertext="phonegap compile appstore export device api XSS mobileinit pushstate loadUrlTimeoutValue allowCrossDomainPages local file:// URL support.cors UIWebView">
+				<a href="hotelapp.html">Hotel App</a>
+			</li>
+			<li data-filtertext="navigation model ajax prefetch preload lazyload loader loadPage">
+				<a href="publish.html">Publishing App</a>
+			</li>
+			<li data-filtertext="pushstate ajax navigation model hashchange popstate">
+				<a href="realestate.html">Real Estate </a>
+			</li>
+			<li data-filtertext="Travel  Tourisam App">
+				<a href="travelapp.html">Travel & Tourism</a>
+			</li>
+			<li data-filtertext="retail app products">
+				<a href="retail.html">Retail</a>
+			</li>
+			<li data-filtertext="movie information Releasing date and Center details and book tickets cinema trailer">
+				<a href="cinema.html">Cinema App</a>
+			</li>
+			<li data-filtertext="refresh forms elements property change update programatically checked selectedindex value update widget input text slider switch select button checkbox radiobutton">
+				<a href="eventapp.html">Event Management</a>
+			</li>
+			<li data-filtertext="creace aboutus vision Lino computers Mission objectives technology entrepreneurs ">
+				<a href="creace.html">Creace</a>
+			</li>
+			<li data-filtertext="careers vaccency php ios android jobs ">
+				<a href="careers.html">Careers</a>
+			</li>
+			<li data-filtertext="contact address branches offices">
+				<a href="contacts.html">Contact Us</a>
+			</li>
+			<li data-filtertext="listview search filter hidden extra meta data">
+				<a href="lists/lists-search-filtertext.html">Search filter hidden data</a>
+			</li>
+			<li data-filtertext="services Mobile Innovation Entertainment company  Industrial segments Banking Business & Sales Application Education Energy & Utilities Finance Games Healthcare insurance Iphone social networking Logistics manufacturing Oil & Gas M-Commerce Mobile Website Development Travel Warehouse  Weather Forecasting Widget Development ">
+				<a href="services.html">Services</a>
+			</li>
+			<li data-filtertext="banking organizations">
+				<a href="service_links/banking.html">Banking</a>
+			</li>
+			<li data-filtertext="Business & Sales Application spreadsheet  text document">
+				<a href="service_links/bussines.html">Business & Sales Application</a>
+			</li>
+			<li data-filtertext="Education learning  teaching">
+				<a href="service_links/education.html">Education</a>
+			</li>
+			<li data-filtertext="Energy Utilities industries  operating efficiency employees ">
+				<a href="service_links/energy.html">Energy & Utilities</a>
+			</li>
+			<li data-filtertext="flawless enterprise-level finance financial companies">
+				<a href="service_links/finance.html">Finance</a>
+			</li>
+			<li data-filtertext="mobile game crystal processor  colorful">
+				<a href="service_links/game.html">Games Development</a>
+			</li>
+			<li data-filtertext="Healthcare regulatory compliance ecosystems">
+				<a href="service_links/health.html">Healthcare</a>
+			</li>
+			<li data-filtertext="harmonize insurance ">
+				<a href="service_links/insure.html">Insurance</a>
+			</li>
+			<li data-filtertext="social networking MySpace Twitter LinkedIn YouTube internet tools">
+				<a href="service_links/iphone.html">Iphone & Social Networking</a>
+			</li>
+			<li data-filtertext="Logistics methodologies utilization">
+				<a href="service_links/logistic.html">Logistics</a>
+			</li>
+			<li data-filtertext="Manufacturing collaboration">
+				<a href="service_links/manufact.html">Manufacturing</a>
+			</li>
+			<li data-filtertext="M-Commerce  mobile commerce e-shopping e-ticketing e-banking">
+				<a href="service_links/mcom.html">M-Commerce</a>
+			</li>
+            <li data-filtertext="harmonize insurance ">
+				<a href="service_links/insure.html">Insurance</a>
+			</li>
+			<li data-filtertext="designing  website">
+				<a href="service_links/mobileweb.html">Mobile Website Development</a>
+			</li>
+			<li data-filtertext="Productivity workers">
+				<a href="service_links/oilgas.html">Oil & Gas</a>
+			</li>
+			<li data-filtertext="retail-services">
+				<a href="service_links/retail.html">Retail</a>
+			</li>
+			<li data-filtertext="traveling  place ">
+				<a href="service_links/travel.html">Travel</a>
+			</li>
+            	<li data-filtertext="accounting Warehouse ">
+				<a href="service_links/wharehouse.html">Warehouse</a>
+			</li>
+			<li data-filtertext="weather">
+				<a href="service_links/weather.html">Weather Forecasting</a>
+			</li>            
+            <li data-filtertext="Thailand Hotspots magazine Books/ Journals">
+				<a href="clients_links/absolute.html">AbsoluteTHAI</a>
+			</li>
+            <li data-filtertext="isible Hotspots, Video Embedded, Video Overlay, Content Hotspots Text and Image, Scrollable Text Overlays">
+				<a href="clients_links/Travel_Magazine.htm">Phuket Travels</a>
+			</li>
+			<li data-filtertext="91.5FM - Phuket Island Radio">
+				<a href="clients_links/Phuket_FM.html">Phuket FM</a>
+			</li>
+			<li data-filtertext="Samui Travel beaches Airplane ">
+				<a href="clients_links/Samui.html">Samui Travel</a>
+			</li>
+			<li data-filtertext="Bali Lifestyle magazine accommodations Lifestyle">
+				<a href="clients_links/balli.html">Bali Lifestyle Magazine</a>
+			</li>
+			<li data-filtertext="Property market  condominiums construction finance architecture">
+				<a href="clients_links/Property.html">Property Report</a>
+			</li>
+            	<li data-filtertext="Thailand Life Style">
+				<a href="clients_links/Thailand.html">Thailand Life Style</a>
+			</li>
+			<li data-filtertext="Absolute Bali">
+				<a href="clients_links/abali.html">Absolute Bali</a>
+			</li>
+             <li data-filtertext="Thailand Hotspots magazine Books/ Journals">
+				<a href="clients_links/absolute.html">AbsoluteTHAI</a>
+			</li>
+            <li data-filtertext="Super Nova">
+				<a href="clients_links/supernova.html">Super Nova</a>
+			</li>
+			<li data-filtertext="Sarroud">
+				<a href="clients_links/sarroud.html">Sarroud</a>
+			</li>
+			<li data-filtertext="Gaddaffi Cocoa Studio game">
+				<a href="clients_links/Samui.html">Gaddaffi</a>
+			</li>
+			<li data-filtertext="Practice Exam question result">
+				<a href="clients_links/ccht.html">Practice Exam</a>
+			</li>
+			<li data-filtertext="Motivational do convenience">
+				<a href="clients_links/dmot.html">Do It Motivational</a>
+			</li>
+            	<li data-filtertext=" 2D game app Watcha">
+				<a href="clients_links/wwork.html">Watcha Worth</a>
+			</li>
+			<li data-filtertext="art League Scorekeeper DLS electronic scorekeeping">
+				<a href="clients_links/dart.html">Dart</a>
+			</li>
+            <li data-filtertext="Gay or Straight face person">
+				<a href="clients_links/gay.html">Gay or Straight</a>
+			</li>
+			<li data-filtertext="Gaddaffi Cocoa Studio game">
+				<a href="clients_links/Samui.html">Gaddaffi</a>
+			</li>
+			<li data-filtertext="Practice Exam question result">
+				<a href="clients_links/ccht.html">Practice Exam</a>
+			</li>
+			<li data-filtertext="Motivational do convenience">
+				<a href="clients_links/dmot.html">Do It Motivational</a>
+			</li>
+            	<li data-filtertext="Love compatibility numerology Guru">
+				<a href="clients_links/lucky.html">What's my Lucky Number</a>
+			</li>
+			<li data-filtertext="Kidswiz kids game maths">
+				<a href="clients_links/Kidswiz.html">Kidswiz</a>
+			</li>
+            </li>
+            <li data-filtertext="BILLIONAIRE HD 2013 fun loving quiz game questions">
+				<a href="clients_links/billi.html">Billionaire</a>
+			</li>
+			<li data-filtertext="MindCloud  goals  dreams  believability">
+				<a href="clients_links/MindCloud.html">MindCloud</a>
+			</li>
+            <li data-filtertext="Jelly Beanz app ">
+				<a href="clients_links/jelly.html">Jelly Beanz</a>
+			</li>
+			<li data-filtertext="Banker profitability  reselling location address">
+				<a href="clients_links/pbank.html">Private Banker</a>
+			</li>
+			<li data-filtertext="trivandrum  hotels homestays tourist shoping">
+				<a href="clients/Stark.html">Stark</a>
+			</li>
+			<li data-filtertext="travel guide map location">
+				<a href="clients_links/dmot.html">KSBC</a>
+			</li>
+            	<li data-filtertext=" Le Meridien Dubai">
+				<a href="clients/rbooms.html">Rooms Booms</a>
+			</li>
+			<li data-filtertext="SOS event users picture">
+				<a href="clients/sos.html">SOS</a>
+			</li>
+              <li data-filtertext="Hungry Cow game 2D evil toddlers">
+				<a href="clients/hcow.html">Hungry Cow</a>
+			</li>
+			<li data-filtertext=" Venad Chitty Centralized system outlets  ledger">
+				<a href="clients/venadchit.html">Venad Chitty Fund</a>
+			</li>
+            <li data-filtertext=">Venad Gold Loan">
+				<a href="clients_links/venadgold.html">Venad Gold Loan</a>
+			</li>
+			<li data-filtertext="real-estate E-Realtors">
+				<a href="clients_links/erelator.html">E-Realtors</a>
+			</li>
+			<li data-filtertext="Citadel cabs trips distance travelled">
+				<a href="clients/citadel.html">Citadel Cabs</a>
+			</li>
+			<li data-filtertext="AHSTA Indian congress party">
+				<a href="clients_links/AHSTA.html">AHSTA</a>
+			</li>
+            	<li data-filtertext="car shop">
+				<a href="clients/cshop.html">Car Shoppy</a>
+			</li>
+			<li data-filtertext="University College  Kariyavattam Students Staff Management administration  promotion ">
+				<a href="clients/uck.html">UCK</a>
+			</li>
+            <li data-filtertext="Better You">
+				<a href="clients/better.html">Better You</a>
+			</li>
+			<li data-filtertext="Vision Box Law of Attraction App">
+				<a href="clients_links/vbox.html">Vision Box</a>
+			</li>
+            	<li data-filtertext="DictaNote  SmartApp slick">
+				<a href="clients/dnote.html">DictaNote</a>
+			</li>
+			<li data-filtertext="Baba Transport Automation calculations profit/loss">
+				<a href="clients_links/baba.html">Baba Transport</a>
+			</li>
+            
+		</ul>
+        
+	</div><!-- /content -->
+
+</div><!-- /page -->
+</body>
+</html>
